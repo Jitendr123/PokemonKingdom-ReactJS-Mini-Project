@@ -1,0 +1,22 @@
+* {
+  text-align: center;
+}
+body{
+  background-color: black;
+  color: white;
+}
+.main-container{
+  /* border: 2px solid red; */
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.getMoreBtn{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(43, 225, 11);
+}

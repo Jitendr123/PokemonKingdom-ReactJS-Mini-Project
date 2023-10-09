@@ -1,0 +1,62 @@
+.card{
+    border: 2px solid rgb(213, 204, 204);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    transition: transform 1s ;
+    box-shadow: 10px 10px 5px #524949;
+
+}
+.card:hover{
+    transform: scale(1.2);
+}
+.card img{
+    width: 140px;
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+}
+.card h3{
+    margin: 0px;
+    margin-top: 5px;
+    padding: 0px;
+}
+.card h4{
+    margin: 0px;
+    padding: 0px;
+}
+.grass{
+    background-color: rgb(58, 110, 58);
+    /* opacity: 0.5; */
+}
+.fire{
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 29, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+    );
+}
+.water{
+    background-color: skyblue;
+}
+.bug {
+    background-color: springgreen;
+}
+.card button{
+    position: relative;
+    padding: 3px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(212, 228, 241);
+}
+
+.model{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
