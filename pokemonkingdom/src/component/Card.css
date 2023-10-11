@@ -16,7 +16,7 @@
 }
 .card img{
     width: 140px;
-    height: 200px;
+    height: 170px;
     margin: 0px;
     padding: 0px;
 }
@@ -30,7 +30,7 @@
     padding: 0px;
 }
 .grass{
-    background-color: rgb(58, 110, 58);
+    background-color: rgb(58, 110, 58) !important;
     /* opacity: 0.5; */
 }
 .fire{
@@ -42,10 +42,13 @@
     );
 }
 .water{
-    background-color: skyblue;
+    background-color: skyblue !important; 
 }
 .bug {
-    background-color: springgreen;
+    background-color: springgreen !important ;
+}
+.none{
+    background-color: #151212 !important;
 }
 .card button{
     position: relative;
@@ -56,7 +59,48 @@
 }
 
 .model{
-    height: 100px;
-    width: 100px;
-    background-color: white;
+    /* height: 300px;
+    width: 300px; */
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 1rem;
+    z-index: 100;
+    gap: 5px;
+    border-radius: 1rem;
+    border: 2px solid rgb(234, 200, 200);
+    box-shadow: 10px 10px 5px #524949;
 }
+.model button{
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    border-radius: 8px;
+}
+.leftPart img{
+    height: 200px;
+    width: 200px;
+}
+/* .leftPart{
+    border: 2px solid rgb(213, 204, 204);
+}
+.rightPart{
+    border: 2px solid rgb(213, 204, 204);
+} */
+.rightPart tr td :nth-child(1){
+    font-weight: bold;
+    text-align: left;
+
+}
+@media screen and (max-width: 500px) {
+    body {
+      background-color: white;
+      color: #151212;
+    }
+    
+  }

@@ -21,7 +21,9 @@ function Card(props){
                 <h4>Type : {pokeInfo.type}</h4>
                 <button onClick={handelModelView}>More Info</button>
             </div>
-            {showModel && (<ExpendedView setShowModel={setShowModel}/>)}
+            {showModel && (<ExpendedView 
+            pokeInfo={pokeInfo}
+            setShowModel={setShowModel}/>)}
         </>
     )
 

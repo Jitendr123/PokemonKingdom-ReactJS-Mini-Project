@@ -12,7 +12,7 @@ function App() {
       setLoading(true);
       const response=await fetch(url);
       const data=await response.json();
-      setUrl(data[0].next);
+      setUrl(data[0]?.next);
       const allPokemons=pokemonList
       // await data.results.map(async (data)=>{
           //     const {url}=data;
@@ -30,8 +30,8 @@ function App() {
               // console.log(data[0].results)
           allPokemons.push(pokemon[0])
       }
+      console.log("all",allPokemons)
       setPokemonList(allPokemons)
-      console.log("all")
       setLoading(false);
   }
 
@@ -64,7 +64,7 @@ function App() {
             <Card   pokeInfo={data} key={index}/>
             )}
           </div>
-          <button className='getMoreBtn' onClick={getMorePoke}>Get More Pokemon</button>
+          {url && <button className='getMoreBtn' onClick={getMorePoke}>Get More Pokemon</button> }
         </div>
       }
       </>
